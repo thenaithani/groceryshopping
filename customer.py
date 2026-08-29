@@ -24,4 +24,5 @@ class NewCustomer:
                                               "ID": id_length}],
                                                index=[id_length])
         data = pandas.concat([data, new_customer_row])
+        data.index.name = "ID-Index"
         data.to_csv("cust-id.csv")

@@ -38,5 +38,7 @@ if login.lower() == "admin":
 
         if operations == "3":
             print("To Be Added")
+
         if operations == "4":
-            print("To Be Added")
+            customer_data = pandas.read_csv("cust-id.csv")
+            print(customer_data.to_string(index=False))

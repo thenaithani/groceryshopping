@@ -1,7 +1,8 @@
-,Name,Age,Gender,Email,Phone,ID
+ID-Index,Name,Age,Gender,Email,Phone,ID
 1000,Admin,,,freshgrow@customer.in,9999666657,1000
 1001,Anant,19.0,M,anantdemo@gmail.com,1234567890,1001
 1002,John,43.0,M,johndoe@gmail.com,9999999000,1002
 1003,Arjun,22.0,M,arjun@mail.com,9748675870,1003
 1004,Arya,33.0,M,arya@gmail.com,768576802,1004
-1005,Leo,45,M,leonardodecaprio@gmail.com,6576657890,1005
+1005,Leo,45.0,M,leonardodecaprio@gmail.com,6576657890,1005
+1006,Priya,20,F,priya@gmail.com,987898789,1006
