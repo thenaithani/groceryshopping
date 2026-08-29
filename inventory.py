@@ -38,3 +38,14 @@ class Inventory:
                                     "Quantity":self.quantity}],
                                   index= [self.category])
             df.to_csv("inventory.csv")
+
+    def check_inventory(self):
+        try:
+            inventory_data = pandas.read_csv("inventory.csv")
+            print(inventory_data)
+
+        except EmptyDataError:
+            print("Inventory is empty")
+
+        except FileNotFoundError:
+            print("Inventory Not Yet Initialized")

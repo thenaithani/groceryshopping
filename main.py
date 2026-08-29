@@ -34,7 +34,8 @@ if login.lower() == "admin":
             admin.add_stuff()
 
         if operations == "2":
-            print("To Be Added")
+            admin.check_inventory()
+
         if operations == "3":
             print("To Be Added")
         if operations == "4":
