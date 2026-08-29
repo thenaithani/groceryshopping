@@ -20,7 +20,8 @@ class NewCustomer:
                                               "Age":self.age,
                                               "Gender":self.gender,
                                               "Email":self.email,
-                                              "Phone":self.phone}],
+                                              "Phone":self.phone,
+                                              "ID": id_length}],
                                                index=[id_length])
         data = pandas.concat([data, new_customer_row])
         data.to_csv("cust-id.csv")
