@@ -6,6 +6,7 @@ with open("Fresh-Grow.txt", encoding="utf-8") as logo:
     print(data)
 from customer import NewCustomer
 
+running = True
 login = input("Please login (Enter Fresh-Grow ID) \n{Type 'new' for a new customer} \n- ")
 
 
@@ -25,13 +26,13 @@ if login.lower() == "admin":
         admin = inventory.Inventory()
         with open("Welcome-Back-Cheif.txt", encoding="utf-8") as greet:
             print(greet.read())
-        operations = input("""1- Add items
+        operations = str(input("""1- Add items
 2- Check Inventory
 3- Change Price
 4- Customers List
 5- Change Stock Quantity
 6- Exit
-- """)
+- """))
         if operations == "1":
             admin.add_stuff()
 
@@ -44,3 +45,9 @@ if login.lower() == "admin":
         if operations == "4":
             customer_data = pandas.read_csv("cust-id.csv")
             print(customer_data.to_string(index=False))
+
+        if operations == "5":
+            print("to be added")
+
+        if operations == "6":
+            running = False
