@@ -1,3 +1,6 @@
-Category-index,Name,Category,Price,Quantity
-Fruit,Apple,Fruit,$1,1000
-Beverage,Indian Tea,Beverage,$10,50
+Name,Category,Price,Quantity,-per
+apple,fruit,2.0,1000,kg
+banana,fruit,1.1,1000,dozens
+tea,beverage,2.0,50,packet
+water,beverage,0.2,100,bottle
+sugar,condiments,5.0,1000,kg

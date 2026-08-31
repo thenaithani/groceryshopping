@@ -29,6 +29,8 @@ if login.lower() == "admin":
 2- Check Inventory
 3- Change Price
 4- Customers List
+5- Change Stock Quantity
+6- Exit
 - """)
         if operations == "1":
             admin.add_stuff()
@@ -37,7 +39,7 @@ if login.lower() == "admin":
             admin.check_inventory()
 
         if operations == "3":
-            print("To Be Added")
+            admin.change_price()
 
         if operations == "4":
             customer_data = pandas.read_csv("cust-id.csv")
