@@ -47,7 +47,7 @@ if login.lower() == "admin":
             print(customer_data.to_string(index=False))
 
         if operations == "5":
-            print("to be added")
+            admin.change_stock()
 
         if operations == "6":
             running = False

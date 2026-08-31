@@ -78,4 +78,29 @@ class Inventory:
         except FileNotFoundError:
             print("Inventory Not Yet Initialized")
 
+    def change_stock(self):
+        try:
+            with open("bars.txt", encoding="utf-8") as bars:
+                print(bars.read())
+
+            inventory_data = pandas.read_csv("inventory.csv", index_col="Name")
+            print(inventory_data)
+
+            with open("bars.txt", encoding="utf-8") as bars:
+                print(bars.read())
+            loc_value = input("Enter index loc value (index = Name) -")
+
+            list_to_change = inventory_data.loc[loc_value, ["Quantity"]].tolist()
+            print(f"Old Quantity = {list_to_change[0]}")
+
+            price = int(input("Enter new Quantity -"))
+            inventory_data.loc[loc_value, ["Quantity"]] = price
+            inventory_data.to_csv("inventory.csv")
+
+
+        except EmptyDataError:
+            print("Inventory is empty")
+        except FileNotFoundError:
+            print("Inventory Not Yet Initialized")
+
 
